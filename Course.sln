@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F879C8D8-F491-463D-9AB6-0A9F28597E11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.Catalog.API", "Services\Course.Catalog.API\Course.Catalog.API.csproj", "{84298296-9E07-43C5-A863-45D0F9159174}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{31BB9473-39F3-4046-A834-4DDE6FB175EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course.Shared", "Shared\Course.Shared\Course.Shared.csproj", "{5E545667-25A8-4F2C-8767-B0D006ACD125}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84298296-9E07-43C5-A863-45D0F9159174} = {F879C8D8-F491-463D-9AB6-0A9F28597E11}
+		{5E545667-25A8-4F2C-8767-B0D006ACD125} = {31BB9473-39F3-4046-A834-4DDE6FB175EC}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84298296-9E07-43C5-A863-45D0F9159174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84298296-9E07-43C5-A863-45D0F9159174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84298296-9E07-43C5-A863-45D0F9159174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84298296-9E07-43C5-A863-45D0F9159174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E545667-25A8-4F2C-8767-B0D006ACD125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E545667-25A8-4F2C-8767-B0D006ACD125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E545667-25A8-4F2C-8767-B0D006ACD125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E545667-25A8-4F2C-8767-B0D006ACD125}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
