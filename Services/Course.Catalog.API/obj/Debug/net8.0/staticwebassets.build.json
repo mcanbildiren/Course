@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "dsw+z5JRLfbvfnm4YN5rLHYjFUjigEjIU18xRsIfEX0=",
-  "Source": "Catalog.API",
-  "BasePath": "_content/Catalog.API",
+  "Hash": "WXalJHdLEbje4nQJx2s7jx5Kj0Bdx0SxC8jHxzZOgTQ=",
+  "Source": "Course.Catalog.API",
+  "BasePath": "_content/Course.Catalog.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

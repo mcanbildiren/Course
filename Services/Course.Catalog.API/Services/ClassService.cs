@@ -26,6 +26,7 @@ public class ClassService : IClassService
     public async Task<ApiResponse<List<ClassDto>>> GetAllClassesAsync()
     {
         var classes = await _classCollection.Find(c => true).ToListAsync();
+
         if (classes.Count != 0)
         {
             foreach (var item in classes)
@@ -44,7 +45,8 @@ public class ClassService : IClassService
 
     public async Task<ApiResponse<ClassDto>> GetClassByIdAsync(string id)
     {
-        var classes = await _classCollection.Find(x => true).FirstOrDefaultAsync();
+        var classes = await _classCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+
         if (classes == null)
         {
             return new ApiResponse<ClassDto>().Fail("Class not found", 404);
@@ -79,7 +81,6 @@ public class ClassService : IClassService
         var classes = _mapper.Map<Class>(createClassDto);
         classes.CreateDate = DateTime.Now;
         await _classCollection.InsertOneAsync(classes);
-
         return new ApiResponse<ClassDto>().Success(_mapper.Map<ClassDto>(classes), 200);
     }
 
@@ -87,7 +88,6 @@ public class ClassService : IClassService
     {
         var updateClass = _mapper.Map<Class>(updateClassDto);
         var result = await _classCollection.FindOneAndReplaceAsync(x => x.Id == updateClassDto.Id, updateClass);
-
         return result == null
             ? new ApiResponse<NoContentResponse>().Fail("Class not found", 404)
             : new ApiResponse<NoContentResponse>().Success(204);
@@ -96,7 +96,6 @@ public class ClassService : IClassService
     public async Task<ApiResponse<NoContentResponse>> DeleteAsync(string id)
     {
         var result = await _classCollection.DeleteOneAsync(x => x.Id == id);
-
         return result.DeletedCount > 0
             ? new ApiResponse<NoContentResponse>().Success(204)
             : new ApiResponse<NoContentResponse>().Fail("Class not found", 404);

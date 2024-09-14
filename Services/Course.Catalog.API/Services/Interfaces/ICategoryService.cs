@@ -8,5 +8,5 @@ public interface ICategoryService
 {
     Task<ApiResponse<List<CategoryDto>>> GetAllCategoriesAsync();
     Task<ApiResponse<CategoryDto>> GetCategoryByIdAsync(string id);
-    Task<ApiResponse<CategoryDto>> CreateAsync(Category category);
+    Task<ApiResponse<CategoryDto>> CreateAsync(CategoryDto category);
 }

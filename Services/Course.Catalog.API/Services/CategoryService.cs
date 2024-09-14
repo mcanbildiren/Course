@@ -31,14 +31,18 @@ public class CategoryService : ICategoryService
     public async Task<ApiResponse<CategoryDto>> GetCategoryByIdAsync(string id)
     {
         var category = await _categoryCollection.Find(c => c.Id == id).FirstOrDefaultAsync();
-        
-        return category == null ? new ApiResponse<CategoryDto>().Fail("Category not found", 404) : new ApiResponse<CategoryDto>().Success(_mapper.Map<CategoryDto>(category), 200);
+
+        return category == null
+            ? new ApiResponse<CategoryDto>().Fail("Category not found", 404)
+            : new ApiResponse<CategoryDto>().Success(_mapper.Map<CategoryDto>(category), 200);
     }
 
-    public async Task<ApiResponse<CategoryDto>> CreateAsync(Category category)
+    public async Task<ApiResponse<CategoryDto>> CreateAsync(CategoryDto payload)
     {
+        var category = _mapper.Map<Category>(payload);
         await _categoryCollection.InsertOneAsync(category);
-        var response = new ApiResponse<CategoryDto>().Success(_mapper.Map<CategoryDto>(category), 200);
+        var responseDto = _mapper.Map<CategoryDto>(category);
+        var response = new ApiResponse<CategoryDto>().Success(responseDto, 200);
         return response;
     }
 }

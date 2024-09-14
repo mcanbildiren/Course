@@ -500,7 +500,10 @@
         },
         "runtime": {
           "bin/placeholder/Course.Shared.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },

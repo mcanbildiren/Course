@@ -17,6 +17,7 @@ builder.Services.AddSingleton<IDatabaseSettings>(x => x.GetRequiredService<IOpti
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IClassService, ClassService>();
 
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -28,6 +29,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.MapControllers();
 
 app.Run();

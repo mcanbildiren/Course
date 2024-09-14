@@ -12,7 +12,7 @@ public class CreateClassDto
 
     public string UserId { get; set; }
 
-    public string CategoryId { get; set; }
-
     public FeatureDto Feature { get; set; }
+    
+    public string CategoryId { get; set; }
 }
