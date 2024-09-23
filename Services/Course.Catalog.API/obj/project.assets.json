@@ -1509,19 +1509,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mcanb\\.nuget\\packages\\": {}
+    "/Users/mcanbildiren/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mcanb\\Desktop\\Repos\\Course\\Services\\Course.Catalog.API\\Course.Catalog.API.csproj",
+      "projectUniqueName": "/Users/mcanbildiren/Documents/Repos/Course/Services/Course.Catalog.API/Course.Catalog.API.csproj",
       "projectName": "Course.Catalog.API",
-      "projectPath": "C:\\Users\\mcanb\\Desktop\\Repos\\Course\\Services\\Course.Catalog.API\\Course.Catalog.API.csproj",
-      "packagesPath": "C:\\Users\\mcanb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mcanb\\Desktop\\Repos\\Course\\Services\\Course.Catalog.API\\obj\\",
+      "projectPath": "/Users/mcanbildiren/Documents/Repos/Course/Services/Course.Catalog.API/Course.Catalog.API.csproj",
+      "packagesPath": "/Users/mcanbildiren/.nuget/packages/",
+      "outputPath": "/Users/mcanbildiren/Documents/Repos/Course/Services/Course.Catalog.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mcanb\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/mcanbildiren/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1533,8 +1533,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\mcanb\\Desktop\\Repos\\Course\\Shared\\Course.Shared\\Course.Shared.csproj": {
-              "projectPath": "C:\\Users\\mcanb\\Desktop\\Repos\\Course\\Shared\\Course.Shared\\Course.Shared.csproj"
+            "/Users/mcanbildiren/Documents/Repos/Course/Shared/Course.Shared/Course.Shared.csproj": {
+              "projectPath": "/Users/mcanbildiren/Documents/Repos/Course/Shared/Course.Shared/Course.Shared.csproj"
             }
           }
         }
@@ -1543,11 +1543,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1590,7 +1585,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
