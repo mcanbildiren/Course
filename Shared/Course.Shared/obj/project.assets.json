@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/mcanbildiren/.nuget/packages/": {}
+    "C:\\Users\\mcanb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mcanbildiren/Documents/Repos/Course/Shared/Course.Shared/Course.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\mcanb\\Desktop\\Repos\\Course\\Shared\\Course.Shared\\Course.Shared.csproj",
       "projectName": "Course.Shared",
-      "projectPath": "/Users/mcanbildiren/Documents/Repos/Course/Shared/Course.Shared/Course.Shared.csproj",
-      "packagesPath": "/Users/mcanbildiren/.nuget/packages/",
-      "outputPath": "/Users/mcanbildiren/Documents/Repos/Course/Shared/Course.Shared/obj/",
+      "projectPath": "C:\\Users\\mcanb\\Desktop\\Repos\\Course\\Shared\\Course.Shared\\Course.Shared.csproj",
+      "packagesPath": "C:\\Users\\mcanb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mcanb\\Desktop\\Repos\\Course\\Shared\\Course.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mcanbildiren/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\mcanb\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -62,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
